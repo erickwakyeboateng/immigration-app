@@ -628,8 +628,7 @@ export function App() {
           GIS Prep Tool
         </p>
         <p className="mt-1">
-          🧑‍💻:{" "}
-          <a href="https://www.linkedin.com/in/erickwakyeboateng/">E R I C</a>
+          🧑‍💻<a href="https://www.linkedin.com/in/erickwakyeboateng/">E R I C</a>
         </p>
       </footer>
     </div>
