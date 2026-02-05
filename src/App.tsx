@@ -625,10 +625,11 @@ export function App() {
           <Award className="w-6 h-6 opacity-20" />
         </div>
         <p className="font-bold text-slate-500 uppercase tracking-widest text-[10px]">
-          Ghana Immigration Service Prep Tool
+          GIS Prep Tool
         </p>
         <p className="mt-1">
-          🧑‍💻:<a href="https://www.linkedin.com/in/erickwakyeboateng/">ERIC</a>
+          🧑‍💻:{" "}
+          <a href="https://www.linkedin.com/in/erickwakyeboateng/">E R I C</a>
         </p>
       </footer>
     </div>
