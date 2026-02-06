@@ -8,6 +8,553 @@ export interface Question {
 }
 
 export const quizQuestions: Question[] = [
+  // NEW OFFICER SCENARIOS & CURRENT AFFAIRS (271-320)
+  {
+    id: 271,
+    category: 'Scenario',
+    text: "An adult traveler arrives at the Aflao border with a 5-year-old child. The adult claims to be the uncle but has no legal guardianship documents. What is the correct protocol?",
+    options: [
+      "Allow entry if the child looks comfortable with the adult",
+      "Detain the adult and refer to the Anti-Human Trafficking Unit for verification",
+      "Ask the child if they know the adult and allow entry if they say yes",
+      "Charge a standard 'family verification' fee and allow entry"
+    ],
+    correctAnswer: 1,
+    explanation: "Standard GIS protocol requires immediate referral to specialized units when a minor is traveling with a non-parent without legal documentation to prevent child trafficking."
+  },
+  {
+    id: 272,
+    category: 'Current Affairs',
+    text: "Who is the current Comptroller-General of the Ghana Immigration Service as of late 2024?",
+    options: ["Mr. Kwame Asuah Takyi", "Mr. Isaac Owusu Mensah", "Mrs. Edith Peniel-Kwofie", "Mr. Laud Kwesi Ofori Affrifah"],
+    correctAnswer: 0,
+    explanation: "Mr. Kwame Asuah Takyi is the Comptroller-General of the GIS, leading the service through major modernizations."
+  },
+  {
+    id: 273,
+    category: 'Current Affairs',
+    text: "Which Ghanaian region recently shared high-security alerts regarding the spillover of extremist activities from the Sahel?",
+    options: ["Upper East Region", "Greater Accra Region", "Western Region", "Central Region"],
+    correctAnswer: 0,
+    explanation: "The Upper East and Upper West regions are on high alert due to their proximity to Burkina Faso and the threat of violent extremism."
+  },
+  {
+    id: 274,
+    category: 'Law & Policy',
+    text: "Under the Immigration Act 2000 (Act 573), an immigration officer has the power to arrest without a warrant if they suspect a person of being a prohibited immigrant. Which section supports this?",
+    options: ["Section 12", "Section 52", "Section 2", "Section 105"],
+    correctAnswer: 1,
+    explanation: "Section 52 of Act 573 grants officers the power of search and arrest without a warrant under specific reasonable suspicions."
+  },
+  {
+    id: 275,
+    category: 'Scenario',
+    text: "While on duty at Terminal 3, KIA, a passenger offers you an expensive watch as a 'gift' for helping them navigate a visa issue. What is the most professional response?",
+    options: [
+      "Accept it but don't tell your colleagues",
+      "Politely decline and explain that GIS officers are prohibited from accepting gifts",
+      "Take it and donate the value to the Service",
+      "Accept it only if it is after your shift"
+    ],
+    correctAnswer: 1,
+    explanation: "The GIS Code of Conduct strictly prohibits the acceptance of any gifts or gratuities that could influence or appear to influence official duties."
+  },
+  {
+    id: 276,
+    category: 'Scenario',
+    text: "You notice a senior officer allowing a group of travelers to bypass the biometric clearance. What should your primary action be?",
+    options: [
+      "Ignore it because they are your superior",
+      "Confront the senior officer in front of the travelers",
+      "Report the incident through the internal confidential reporting (Whistleblowing) channel",
+      "Allow others to bypass as well to be fair"
+    ],
+    correctAnswer: 2,
+    explanation: "Professional integrity requires reporting security breaches through the proper official channels, regardless of the rank of the individual involved."
+  },
+  {
+    id: 277,
+    category: 'Border Operations',
+    text: "What does 'E-Gate' technology, recently being expanded at Ghana's airports, primarily aim to achieve?",
+    options: [
+      "To charge more fees",
+      "To automate the immigration clearance for Ghanaian passport holders",
+      "To replace all immigration officers",
+      "To check for overweight luggage"
+    ],
+    correctAnswer: 1,
+    explanation: "E-Gates allow for automated self-clearance, reducing congestion and allowing officers to focus on high-risk travelers."
+  },
+  {
+    id: 278,
+    category: 'Current Affairs',
+    text: "Which country recently withdrew from ECOWAS, impacting the free movement of persons in the sub-region?",
+    options: ["Nigeria", "Mali, Burkina Faso, and Niger", "Togo", "Ivory Coast"],
+    correctAnswer: 1,
+    explanation: "The withdrawal of the AES states (Mali, Burkina Faso, and Niger) from ECOWAS has significant implications for the 'Free Movement' protocol."
+  },
+  {
+    id: 279,
+    category: 'Scenario',
+    text: "A foreign national presents a passport that looks genuine but is not being read by the MRZ (Machine Readable Zone) scanner. What is your next move?",
+    options: [
+      "Manually type in the details and allow entry",
+      "Inform the traveler that their passport is fake and deport them",
+      "Refer the document to the Forensic Unit for secondary inspection",
+      "Tell them to go back and get a new passport"
+    ],
+    correctAnswer: 2,
+    explanation: "Technical failure in scanning requires a secondary inspection by document specialists rather than immediate assumptions."
+  },
+  {
+    id: 280,
+    category: 'Ethics & Leadership',
+    text: "A subordinate officer consistently arrives 15 minutes late to their shift at the border. As the Officer-in-Charge, what is the best first step?",
+    options: [
+      "Immediately recommend them for dismissal",
+      "Shout at them in the presence of travelers to set an example",
+      "Have a private counseling session to understand the cause and issue a verbal warning",
+      "Ignore it as long as they work hard"
+    ],
+    correctAnswer: 2,
+    explanation: "Leadership involves fair disciplinary progression, starting with private counseling before formal escalation."
+  },
+  {
+    id: 281,
+    category: 'Current Affairs',
+    text: "Ghana's 'Integrated Border Management' strategy involves cooperation between which agencies?",
+    options: [
+      "GIS and GPS only",
+      "GIS, GRA-Customs, and GAF",
+      "GIS and Ministry of Education",
+      "Only the GIS"
+    ],
+    correctAnswer: 1,
+    explanation: "IBM requires the collaboration of Immigration, Customs, and the Armed Forces for comprehensive border security."
+  },
+  {
+    id: 282,
+    category: 'Scenario',
+    text: "During a routine patrol, you find a group of 20 people crossing an 'unapproved route'. They claim they are only going to a nearby farm across the border. What is the correct action?",
+    options: [
+      "Let them go since it's just farming",
+      "Arrest and escort them to the nearest border post for screening and documentation",
+      "Collect a 'passage fee' from them",
+      "Tell them to use the main road next time and let them go"
+    ],
+    correctAnswer: 1,
+    explanation: "All cross-border movement must be through approved routes; undocumented movement must be officially processed regardless of the reason."
+  },
+  {
+    id: 283,
+    category: 'Law & Policy',
+    text: "Which of the following ranks is directly above 'Assistant Superintendent' in the GIS?",
+    options: ["Deputy Superintendent", "Superintendent", "Inspector", "Chief Superintendent"],
+    correctAnswer: 0,
+    explanation: "The rank structure of the GIS follows a specific hierarchy; Deputy Superintendent follows Assistant Superintendent."
+  },
+  {
+    id: 284,
+    category: 'Scenario',
+    text: "A traveler's visa has expired by exactly one day due to a flight cancellation. How should an officer handle this at the departure desk?",
+    options: [
+      "Arrest them for overstaying",
+      "Refer to the supervisor to assess the flight cancellation proof and potentially waive the fine",
+      "Demand an immediate cash payment for the overstay",
+      "Pretend you didn't see the date"
+    ],
+    correctAnswer: 1,
+    explanation: "Extenuating circumstances like flight cancellations are handled via supervisory discretion and official documentation, not on-the-spot cash collections."
+  },
+  {
+    id: 285,
+    category: 'Current Affairs',
+    text: "Who is the current Minister for the Interior of Ghana?",
+    options: ["Hon. Ambrose Dery", "Hon. Henry Quartey", "Hon. Albert Kan-Dapaah", "Hon. Dominic Nitiwul"],
+    correctAnswer: 1,
+    explanation: "Hon. Henry Quartey is the current Minister for the Interior as of the latest cabinet reshuffle in 2024."
+  },
+  {
+    id: 286,
+    category: 'Scenario',
+    text: "A traveler from a high-risk country for infectious diseases arrives at the border but has no Yellow Fever card. What is the protocol?",
+    options: [
+      "Refuse entry immediately",
+      "Allow entry and ask them to visit a clinic later",
+      "Refer to the Port Health officials on-site for isolation or vaccination",
+      "Tell them to pay a fine and enter"
+    ],
+    correctAnswer: 2,
+    explanation: "Immigration works closely with Port Health; medical requirements are strictly handled by health officials at the point of entry."
+  },
+  {
+    id: 287,
+    category: 'Border Operations',
+    text: "What is the meaning of the 'Black Star' on the Ghana Immigration Service logo?",
+    options: [
+      "The darkness of the night",
+      "The hope and honor of Africa",
+      "The mining industry",
+      "The number of regions"
+    ],
+    correctAnswer: 1,
+    explanation: "The Black Star is the Lodestar of African Freedom and represents the hope and honor of the continent."
+  },
+  {
+    id: 288,
+    category: 'Ethics & Leadership',
+    text: "Which of these is the MOST critical quality of an Immigration Officer at a lone border post?",
+    options: ["Physical speed", "Self-discipline and integrity", "Handwriting", "Loudness"],
+    correctAnswer: 1,
+    explanation: "Officers at remote posts work with less supervision, making self-discipline and integrity the most critical traits."
+  },
+  {
+    id: 289,
+    category: 'Scenario',
+    text: "A diplomatic passport holder refuses to have their bags searched, citing diplomatic immunity. What is the correct legal stance?",
+    options: [
+      "Search the bags anyway",
+      "Diplomatic bags are inviolable and cannot be searched or detained if properly marked",
+      "Arrest the diplomat",
+      "Only search if you think they have food"
+    ],
+    correctAnswer: 1,
+    explanation: "Under the Vienna Convention, properly identified diplomatic bags are protected from search or seizure."
+  },
+  {
+    id: 290,
+    category: 'Current Affairs',
+    text: "Ghana is currently implementing a 'Visa on Arrival' policy for which group of people during the 'December in GH' period?",
+    options: ["Only Europeans", "Only Nigerians", "Global African Diaspora and African nationals", "Only Americans"],
+    correctAnswer: 2,
+    explanation: "Ghana often implements simplified visa policies for the African Diaspora to promote tourism and the 'Beyond the Return' initiative."
+  },
+  {
+    id: 291,
+    category: 'Law & Policy',
+    text: "What is the primary function of the 'Enforcement Unit' of the GIS?",
+    options: [
+      "To issue visas",
+      "To track and apprehend illegal immigrants and law violators",
+      "To cook for the officers",
+      "To build new border posts"
+    ],
+    correctAnswer: 1,
+    explanation: "The Enforcement Unit is responsible for the internal monitoring and removal of persons who violate immigration laws."
+  },
+  {
+    id: 292,
+    category: 'Scenario',
+    text: "You find a traveler with a passport from a country that Ghana does not have diplomatic relations with. What do you do?",
+    options: [
+      "Confiscate the passport",
+      "Follow the specific directives from the Ministry of Foreign Affairs regarding 'non-recognized' travel documents",
+      "Let them in if they have money",
+      "Tell them they don't exist"
+    ],
+    correctAnswer: 1,
+    explanation: "Entry on unrecognized documents is a complex legal area requiring adherence to high-level Ministry directives."
+  },
+  {
+    id: 293,
+    category: 'Current Affairs',
+    text: "Which border post is the main gateway between Ghana and Burkina Faso?",
+    options: ["Aflao", "Elubo", "Paga", "Seme"],
+    correctAnswer: 2,
+    explanation: "Paga is the primary northern gateway between Ghana and Burkina Faso."
+  },
+  {
+    id: 294,
+    category: 'Border Operations',
+    text: "What is 'Secondary Inspection' in immigration?",
+    options: [
+      "Checking the traveler's luggage twice",
+      "A more detailed interview and document check in a private office",
+      "Checking the officer's uniform",
+      "The second time a traveler visits Ghana"
+    ],
+    correctAnswer: 1,
+    explanation: "Secondary inspection is used when the primary officer has doubts that require deeper investigation."
+  },
+  {
+    id: 295,
+    category: 'Scenario',
+    text: "A traveler claims to be a Ghanaian citizen but has no passport, only a Ghana Card and a local birth certificate. Can they be cleared?",
+    options: [
+      "No, they need a passport",
+      "Yes, the Ghana Card is now a valid travel document for entry into Ghana for citizens",
+      "Only if they pay a fine",
+      "Only if they can speak Twi"
+    ],
+    correctAnswer: 1,
+    explanation: "The Ghana Card is officially recognized for the entry of citizens into Ghana at major ports."
+  },
+  {
+    id: 296,
+    category: 'Ethics & Leadership',
+    text: "What is the motto of the Ghana Immigration Service?",
+    options: ["Service with Integrity", "Friendship and Vigilance", "Discipline and Hardwork", "Security and Peace"],
+    correctAnswer: 1,
+    explanation: "The GIS motto 'Friendship and Vigilance' reflects the balance between welcoming travelers and staying alert for threats."
+  },
+  {
+    id: 297,
+    category: 'Current Affairs',
+    text: "Which GIS training school is located in the Central Region?",
+    options: [
+      "Immigration Service Academy and Training School (ISATS)",
+      "Police College",
+      "Asutsuare Military Camp",
+      "GIMPA"
+    ],
+    correctAnswer: 0,
+    explanation: "ISATS is located in Assin Fosu, Central Region, where recruits and officers undergo training."
+  },
+  {
+    id: 298,
+    category: 'Scenario',
+    text: "You find a 'Refugee Identity Card' in a traveler's bag that they didn't declare. They are traveling on a standard passport. What is the implication?",
+    options: [
+      "It means they are a spy",
+      "It suggests they may have been granted asylum elsewhere and are now 'refugee-in-orbit', requiring careful status check",
+      "It has no implication",
+      "Give them a prize for surviving"
+    ],
+    correctAnswer: 1,
+    explanation: "Hidden refugee status can affect the legality of travel and requires verification of their current legal residence."
+  },
+  {
+    id: 299,
+    category: 'Law & Policy',
+    text: "What is the maximum validity of a standard Ghanaian tourist visa?",
+    options: ["1 month", "3 months", "6 months", "1 year"],
+    correctAnswer: 1,
+    explanation: "Standard tourist visas are typically issued for an initial stay of up to 3 months (90 days)."
+  },
+  {
+    id: 300,
+    category: 'Current Affairs',
+    text: "Ghana recently launched the 'e-Visa' portal. What is its primary benefit?",
+    options: [
+      "To make visas cheaper",
+      "To allow travelers to apply and receive visas online before arrival",
+      "To stop people from traveling",
+      "To increase the number of physical embassies"
+    ],
+    correctAnswer: 1,
+    explanation: "e-Visas modernize the process, allowing for remote application and faster processing."
+  },
+  {
+    id: 301,
+    category: 'Scenario',
+    text: "An airline brings a passenger who is refused entry (Inadmissible). Who is responsible for the cost of their return flight?",
+    options: ["The passenger", "The Ghana Government", "The Airline", "The Officer"],
+    correctAnswer: 2,
+    explanation: "Under international aviation law (IATA/ICAO), the carrier that brings an inadmissible passenger is responsible for their removal."
+  },
+  {
+    id: 302,
+    category: 'Border Operations',
+    text: "Which of these is a 'Biometric' identifier used by the GIS?",
+    options: ["Favorite color", "Fingerprints and Facial features", "Handwriting style", "Height in cm"],
+    correctAnswer: 1,
+    explanation: "GIS uses fingerprints and facial recognition as primary biometric identifiers."
+  },
+  {
+    id: 303,
+    category: 'Current Affairs',
+    text: "What is the name of the operation aimed at securing Ghana's borders against terrorism in the north?",
+    options: ["Operation Halt", "Operation Koudanlgou", "Operation Cowleg", "Operation Clean Front"],
+    correctAnswer: 1,
+    explanation: "Operation Koudanlgou is a joint regional operation (including Ghana) to fight cross-border terrorism."
+  },
+  {
+    id: 304,
+    category: 'Scenario',
+    text: "A passenger's name appears on a 'Stop List' (Watchlist). What is your first priority?",
+    options: [
+      "Shout 'Arrest him!'",
+      "Discreetly alert your supervisor and the security agencies without alerting the passenger",
+      "Ask the passenger why they are on the list",
+      "Delete the name to avoid trouble"
+    ],
+    correctAnswer: 1,
+    explanation: "Watchlist hits must be handled with extreme discretion to prevent the suspect from fleeing or causing a scene."
+  },
+  {
+    id: 305,
+    category: 'Ethics & Leadership',
+    text: "What does the 'Sword' on the GIS officer's cap badge symbolize?",
+    options: ["War", "Justice and Authority", "Farming", "Wealth"],
+    correctAnswer: 1,
+    explanation: "The sword symbolizes the authority of the state and the pursuit of justice in enforcing laws."
+  },
+  {
+    id: 306,
+    category: 'Current Affairs',
+    text: "How many regions does Ghana currently have?",
+    options: ["10", "12", "16", "20"],
+    correctAnswer: 2,
+    explanation: "Ghana has 16 administrative regions following the 2018 referendum."
+  },
+  {
+    id: 307,
+    category: 'Scenario',
+    text: "A traveler is found with a large sum of undeclared cash ($50,000) at the border. What is the immigration officer's role?",
+    options: [
+      "Keep the money",
+      "Detain the passenger and hand over to the GRA-Customs and Financial Intelligence Centre",
+      "Allow them to pass if they give you $100",
+      "Tell them to hide it better"
+    ],
+    correctAnswer: 1,
+    explanation: "Immigration officers work with Customs to enforce currency declaration laws; suspicious large sums must be reported."
+  },
+  {
+    id: 308,
+    category: 'Border Operations',
+    text: "What is an 'Interpol Red Notice'?",
+    options: [
+      "A request to arrest a wanted person pending extradition",
+      "A warning about a missing person",
+      "A notice for a new job",
+      "A traffic light signal"
+    ],
+    correctAnswer: 0,
+    explanation: "Red Notices are for wanted fugitives and are critical for border officers to monitor."
+  },
+  {
+    id: 309,
+    category: 'Law & Policy',
+    text: "Which GIS rank wears 'Three Stars' on their shoulder?",
+    options: ["Assistant Superintendent", "Deputy Superintendent", "Superintendent", "Inspector"],
+    correctAnswer: 2,
+    explanation: "In the GIS rank structure, a Superintendent (Supt.) wears three stars."
+  },
+  {
+    id: 310,
+    category: 'Current Affairs',
+    text: "Which country is to the West of Ghana?",
+    options: ["Togo", "Burkina Faso", "Ivory Coast", "Nigeria"],
+    correctAnswer: 2,
+    explanation: "Ivory Coast (Côte d'Ivoire) is Ghana's neighbor to the West."
+  },
+  {
+    id: 311,
+    category: 'Scenario',
+    text: "You notice a traveler who is sweating profusely, avoiding eye contact, and has no luggage for a 2-week trip. What does this profile suggest?",
+    options: [
+      "They are just hot",
+      "High-risk indicator for smuggling or trafficking; require secondary search",
+      "They are a very efficient traveler",
+      "They forgot their bags at home"
+    ],
+    correctAnswer: 1,
+    explanation: "Behavioral indicators combined with illogical travel patterns (no bags for a long stay) are key risk markers."
+  },
+  {
+    id: 312,
+    category: 'Ethics & Leadership',
+    text: "What is the 'Chain of Command'?",
+    options: [
+      "A literal chain used for prisoners",
+      "The line of authority and responsibility along which orders are passed",
+      "A type of jewelry for officers",
+      "The name of a GIS operation"
+    ],
+    correctAnswer: 1,
+    explanation: "The chain of command is essential for discipline and effective communication in a paramilitary organization."
+  },
+  {
+    id: 313,
+    category: 'Current Affairs',
+    text: "Which town is the administrative capital of the Oti Region?",
+    options: ["Ho", "Dambai", "Goaso", "Sefwi Wiawso"],
+    correctAnswer: 1,
+    explanation: "Dambai is the capital of the Oti Region."
+  },
+  {
+    id: 314,
+    category: 'Border Operations',
+    text: "What is 'Transnational Organized Crime'?",
+    options: [
+      "Crime that happens in one town",
+      "Crime that crosses national borders and involves multiple countries",
+      "A type of political party",
+      "Legal international business"
+    ],
+    correctAnswer: 1,
+    explanation: "Immigration officers are the first line of defense against transnational crimes like human and drug trafficking."
+  },
+  {
+    id: 315,
+    category: 'Scenario',
+    text: "An elderly traveler collapses in the arrivals hall. What is your first priority?",
+    options: [
+      "Check their passport",
+      "Call for medical assistance/emergency services and secure the immediate area",
+      "Ask them for their visa",
+      "Take a photo for the news"
+    ],
+    correctAnswer: 1,
+    explanation: "Life and safety take priority over administrative checks in a medical emergency."
+  },
+  {
+    id: 316,
+    category: 'Current Affairs',
+    text: "Which sea is to the South of Ghana?",
+    options: ["The Red Sea", "The Mediterranean Sea", "The Gulf of Guinea (Atlantic Ocean)", "The Dead Sea"],
+    correctAnswer: 2,
+    explanation: "Ghana's southern coast is bordered by the Gulf of Guinea."
+  },
+  {
+    id: 317,
+    category: 'Law & Policy',
+    text: "A 'Residence Permit' in Ghana allows a foreigner to:",
+    options: [
+      "Vote in elections",
+      "Live in Ghana for a specified period for work, school, or retirement",
+      "Become a Chief",
+      "Travel without a passport"
+    ],
+    correctAnswer: 1,
+    explanation: "Residence permits are for long-term stays but do not grant political rights like voting."
+  },
+  {
+    id: 318,
+    category: 'Scenario',
+    text: "A traveler presents a passport where the photo looks slightly raised or 'pasted over'. What is this a sign of?",
+    options: [
+      "A new passport design",
+      "Photo substitution (a type of forgery)",
+      "The traveler has gained weight",
+      "Good passport protection"
+    ],
+    correctAnswer: 1,
+    explanation: "Photo substitution is one of the most common methods of altering a genuine passport."
+  },
+  {
+    id: 319,
+    category: 'Ethics & Leadership',
+    text: "Why is 'Punctuality' emphasized in the GIS?",
+    options: [
+      "To annoy the officers",
+      "To ensure border posts are never unmanned and security is constant",
+      "To show off the watches",
+      "Because the CG likes it"
+    ],
+    correctAnswer: 1,
+    explanation: "Border security is 24/7; lateness creates gaps in national security."
+  },
+  {
+    id: 320,
+    category: 'Current Affairs',
+    text: "Which Ghanaian region is famous for the 'Mole National Park'?",
+    options: ["Northern Region", "Savannah Region", "Upper West Region", "North East Region"],
+    correctAnswer: 1,
+    explanation: "Mole National Park is now located in the Savannah Region following the regional reorganization."
+  },
+
   // OFFICER CADRE QUESTIONS (201-270)
   {
     id: 201,
